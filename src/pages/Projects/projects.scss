@@ -1,0 +1,91 @@
+.projects {
+  display: grid;
+  gap: 16px;
+}
+
+.pageHead h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 920;
+}
+.pageHead p {
+  margin: 6px 0 0;
+  color: rgba(226, 232, 240, 0.72);
+  max-width: 80ch;
+}
+
+.searchRow {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.55);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.28);
+}
+.searchIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  color: rgba(226, 232, 240, 0.8);
+  font-weight: 900;
+}
+.searchInput {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(2, 6, 23, 0.35);
+  color: rgba(255,255,255,0.92);
+  font-weight: 750;
+  outline: none;
+}
+.searchInput:focus {
+  border-color: rgba(34, 211, 238, 0.30);
+  box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.10);
+}
+.searchTag {
+  padding: 10px 12px;
+  border-radius: 14px;
+  font-weight: 900;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(148, 163, 184, 0.08);
+  color: rgba(226, 232, 240, 0.85);
+  min-width: 44px;
+  text-align: center;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.projectItem {
+  padding: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.58);
+  box-shadow: 0 26px 60px rgba(0,0,0,0.28);
+  transition: transform 160ms ease, filter 160ms ease, border-color 160ms ease;
+  display: grid;
+  gap: 10px;
+}
+.projectItem:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  border-color: rgba(34, 211, 238, 0.20);
+}
+.projectItem__title { font-weight: 920; font-size: 15px; }
+.projectItem__tagline { color: rgba(226, 232, 240, 0.72); font-size: 13px; line-height: 1.35; }
+.projectItem__stack { display: flex; gap: 8px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .projectGrid { grid-template-columns: 1fr; }
+}

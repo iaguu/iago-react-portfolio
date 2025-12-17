@@ -1,0 +1,14 @@
+.appShell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.appMain {
+  padding: 28px 0 48px;
+}
+
+.container {
+  width: min(1120px, calc(100% - 44px));
+  margin: 0 auto;
+}

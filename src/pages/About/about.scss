@@ -1,0 +1,17 @@
+.about { display: grid; gap: 16px; }
+.pageHead h1 { margin: 0; font-size: 26px; font-weight: 920; }
+.pageHead p { margin: 6px 0 0; color: rgba(226, 232, 240, 0.72); max-width: 90ch; }
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.box { padding: 16px; }
+.box__title { font-weight: 920; }
+.tagGrid { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.steps { margin-top: 12px; display: grid; gap: 10px; color: rgba(226, 232, 240, 0.76); font-weight: 780; }
+
+@media (max-width: 900px) {
+  .aboutGrid { grid-template-columns: 1fr; }
+}
