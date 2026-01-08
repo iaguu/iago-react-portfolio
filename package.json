@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "test": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
-    "lint:fix": "eslint src/**/*.{js,jsx} --fix"
+    "lint:fix": "eslint src/**/*.{js,jsx} --fix",
+    "release": "semantic-release"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -27,6 +28,12 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "sass": "^1.80.6",
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "semantic-release": "^22.0.0",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^11.0.0",
+    "@semantic-release/github": "^9.0.0",
+    "@semantic-release/npm": "^11.0.0",
+    "@semantic-release/release-notes-generator": "^12.0.0"
   }
 }
